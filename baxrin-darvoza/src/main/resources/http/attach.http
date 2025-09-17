@@ -1,0 +1,11 @@
+### create attach
+POST localhost:8082/attach/api/v1/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIyIiwiaWF0IjoxNzU2NzI5MTE0LCJleHAiOjE3NTY4MTU1MTR9.8eUsX6D7QuVvPSeaJBsELnbJ1_1RxMcU2_tu1hYm1jKyCeHT7YMEtZdwtJe_jJqEzEtkmCF_qXNn2y2wZkNOwQ
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="img.png"
+Content-Type: image/png
+
+< C:/Users\123\Downloads\baxrin-darvoza (3)\baxrin-darvoza (2)\baxrin-darvoza\src\main\resources\photo\img.png
+--WebAppBoundary--

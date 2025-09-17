@@ -1,0 +1,49 @@
+### gate create
+POST localhost:8082/gate/api/v1/create
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIxIiwiaWF0IjoxNzU3NTAxMzUwLCJleHAiOjE3NTc1ODc3NTB9.JGKYzV7jxmtUsImU7Z6qWqBAcxeTbNm84vxBkaD5ocV3fwFo4_V7qseBbuvpLh5CxT9EA8gABJkFaJ-ACWesMw
+
+--WebAppBoundary
+Content-Disposition: form-data; name="post"
+Content-Type: application/json
+
+{
+  "name": "uchiriladigan",
+  "description": "uchiriladigan,lkfnmvso;dlv "
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="image"; filename="img.png"
+Content-Type: image/png
+
+< C:/Users\123\Downloads\baxrin-darvoza (3)\baxrin-darvoza (2)\baxrin-darvoza\src\main\resources\photo\img.png
+--WebAppBoundary--
+Content-Disposition: form-data; name="image"; filename="test.png"
+Content-Type: image/png
+
+< C:/Users\123\Downloads\baxrin-darvoza (3)\baxrin-darvoza (2)\baxrin-darvoza\src\main\resources\photo\img_1.png
+--WebAppBoundary--
+
+### get id
+GET localhost:8082/gate/api/v1/get-id/d96bedf1-b4a6-4a96-95ed-c74bdf6527ef
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIxIiwiaWF0IjoxNzU3MDY0NTYxLCJleHAiOjE3NTcxNTA5NjF9.VJQQBwSArzuzuxtfNbyeA7OR-Q3EsVxxIHFk-5gzqP4HoLAqyDBUUfmi_0ZY9LeYMgYryoyviKd-ntvas9PmLA
+
+### get admin id all
+GET localhost:8082/gate/api/v1/get-admin-all-post
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIxIiwiaWF0IjoxNzU3MzE2MzI0LCJleHAiOjE3NTc0MDI3MjR9.dO9SQqrekx0fQp76TOvEf6p_87Secqgwgmir-CYizBZhShhnlSFIhAmbtTkj43dJoD1Md_neHxewXNf2qv4YYw
+
+### get all
+GET localhost:8082/gate/api/v1/get-all
+
+### gate update
+PUT localhost:8082/gate/api/v1/update/d96bedf1-b4a6-4a96-95ed-c74bdf6527ef
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIxIiwiaWF0IjoxNzU3MzE2MzI0LCJleHAiOjE3NTc0MDI3MjR9.dO9SQqrekx0fQp76TOvEf6p_87Secqgwgmir-CYizBZhShhnlSFIhAmbtTkj43dJoD1Md_neHxewXNf2qv4YYw
+
+{
+  "name": "Katta temir darvoza",
+  "description": "Katta temir darvoza bezaklangan qalin tunikadan ishlangan ogir darvoza"
+}
+
+### gate delete
+DELETE localhost:8082/gate/api/v1/delete?id=488c43e2-5e92-4872-b239-433f1b064d5f
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaXlvcmJla3Nob2Rtb25vdjIwMDJAZ21haWwuY29tIiwicm9sZXMiOiJVU0VSIiwiaWQiOiIxIiwiaWF0IjoxNzU3NTAxMzUwLCJleHAiOjE3NTc1ODc3NTB9.JGKYzV7jxmtUsImU7Z6qWqBAcxeTbNm84vxBkaD5ocV3fwFo4_V7qseBbuvpLh5CxT9EA8gABJkFaJ-ACWesMw

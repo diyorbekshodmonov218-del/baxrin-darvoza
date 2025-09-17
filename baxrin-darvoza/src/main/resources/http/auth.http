@@ -1,0 +1,19 @@
+### auth registration
+POST localhost:8082/auth/api/v1/registration
+Content-Type: application/json
+Accept-Language: UZ
+
+{
+  "name": "kdckj",
+  "username": "diyorbekshonovx02@gmail.com",
+  "password": "123"
+}
+
+### admin login
+POST localhost:8082/auth/api/v1/login
+Content-Type: application/json
+
+{
+  "username": "diyorbekshodmonov2002@gmail.com",
+  "password": "123"
+}
